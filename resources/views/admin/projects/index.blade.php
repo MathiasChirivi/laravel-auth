@@ -11,6 +11,7 @@
                     <h5 class="card-title"><strong>Nome del progetto:</strong> {{ $project->title }}</h5>
                     <p class="card-text"><strong>Descrizione del progetto:</strong> {{ $project->description }}</p>
                     <p class="card-text"><strong>Nome repository:</strong> {{ $project->repository }}</p>
+                    <a href="{{ route("admin.projects.show",$project ) }}" class="btn btn-dark">View details</a>
                 </div>
             </div>
         </div>
